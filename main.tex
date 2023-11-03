@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Carlos Queiroz
+% Based on a template by  Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%------------------------------------------------
+%	RESUME HEADER
+%------------------------------------------------
+\begin{center}
+   
+    {\fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Carlos de Queiroz}}}} % First name
+    \vspace{6pt}
+    
+    {\Large Software Engineer} % Career or current job title
+    
+    % \Vhrulefill
+\end{center}	
+
+\input{info}
+
+%------------------------------------------------
+%	RESUME BODY
+%------------------------------------------------
+% FOR 2 Columns
+% \begin{minipage}[t]{0.49\textwidth}
+%         \input{summary}
+%     \end{minipage}
+%     \hfill
+% \begin{minipage}[t]{0.49\textwidth}
+%         \input{skills}
+%     \end{minipage}
+
+
+\input{summary}
+\input{skills}
+% \input{projects}
+
+\input{experience}
+
+\vspace{-10 pt}
+\input{education}
+
+\input{certification}
+% \vspace{-10 pt}
+\input{language}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
